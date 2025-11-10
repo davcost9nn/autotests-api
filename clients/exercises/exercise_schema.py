@@ -16,10 +16,16 @@ class ExerciseSchema(BaseModel):
     estimated_time: str = Field(alias='estimatedTime')
 
 class GetExercisesQuerySchema(BaseModel):
-    courseId: str
+    model_config = ConfigDict(populate_by_name=True)
+    course_id: str = Field(alias='courseId')
+
+class GetExerciseQuerySchema(BaseModel):
+    exercise_id: str
 
 class GetExercisesResponseSchema(BaseModel):
-    model_config = ConfigDict(populate_by_name=True)
+    exercises: list[ExerciseSchema]
+
+class GetExerciseResponseSchema(BaseModel):
     exercise: ExerciseSchema
 
 class CreateExerciseResponseSchema(BaseModel):

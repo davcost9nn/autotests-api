@@ -1,15 +1,16 @@
 from httpx import Response
 from clients.api_client import APIClient
 from clients.exercises.exercise_schema import GetExercisesQuerySchema, CreateExerciseRequestSchema, \
-    UpdateExerciseRequestSchema, GetExercisesResponseSchema, CreateExerciseResponseSchema, UpdateExerciseResponseSchema
+    UpdateExerciseRequestSchema, GetExercisesResponseSchema, CreateExerciseResponseSchema, UpdateExerciseResponseSchema, \
+    GetExerciseQuerySchema
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 
 
 
 
 class ExercisesClient(APIClient):
-    def get_exercises_api(self,query: GetExercisesQuerySchema) -> Response:
-        return self.get('/api/v1/exercises',params=query)
+    def get_exercises_api(self,query: str) -> Response:
+        return self.get('/api/v1/exercises',params=query.model_dump(by_alias=True))
 
     def get_exercise_api(self,exercise_id: str) -> Response:
         return self.get(f'/api/v1/exercises/{exercise_id}')
