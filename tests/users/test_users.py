@@ -1,4 +1,5 @@
 import pytest
+import allure
 
 from clients.users.private_users_client import PrivateUsersClient
 from clients.users.public_user_client import PublicUsersClient
@@ -6,17 +7,31 @@ from clients.users.users_schema import CreateUserRequestSchema, CreateUserRespon
 from http import HTTPStatus
 
 from fixtures.users import UserFixture
+from tools.allure.tags import AllureTag
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
 from tools.assertions.users import assert_create_user_response, assert_get_user_response
 from tools.fakers import fake
-
+from tools.allure.epics import AllureEpic
+from tools.allure.features import AllureFeature
+from tools.allure.stories import AllureStory
+from allure_commons.types import Severity
 
 
 @pytest.mark.users
 @pytest.mark.regression
+@allure.tag(AllureTag.USERS, AllureTag.REGRESSION)
+@allure.epic(AllureEpic.LMS)
+@allure.feature(AllureFeature.USERS)
+@allure.parent_suite(AllureEpic.LMS)
+@allure.suite(AllureFeature.USERS)
 class TestUsers:
     @pytest.mark.parametrize('email', ['mail.ru', 'gmail.com', 'example.com'])
+    @allure.tag(AllureTag.CREATE_ENTITY)
+    @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.title('Create User')
+    @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     def test_create_user(self,public_users_client: PublicUsersClient,email: str):
         request = CreateUserRequestSchema(email=fake.email(domain=email))
         response = public_users_client.create_user_api(request)
@@ -27,8 +42,11 @@ class TestUsers:
 
         validate_json_schema(response.json(), response_data.model_json_schema())
 
-
-
+    @allure.tag(AllureTag.GET_ENTITY)
+    @allure.story(AllureStory.GET_ENTITY)
+    @allure.title('Get_user_me')
+    @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
     def test_get_user_me(self,function_user: UserFixture, private_users_client: PrivateUsersClient):
         response = private_users_client.get_user_me_api()
         response_data = GetUserResponseSchema.model_validate_json(response.text)
