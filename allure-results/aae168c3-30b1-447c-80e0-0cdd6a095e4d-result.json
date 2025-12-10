@@ -1,0 +1,1 @@
+{"name": "Create file with empty filename", "status": "skipped", "start": 1765371440902, "stop": 1765371440902, "uuid": "97c2d69b-03b5-4ce4-9c24-82b609be0214", "testCaseId": "8960f02b9d182e132fc8a9ae4d4d1be9", "fullName": "tests.files.test_files.TestFiles#test_create_file_with_empty_directory", "titlePath": ["tests", "files", "test_files.py", "TestFiles"]}
