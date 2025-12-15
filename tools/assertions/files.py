@@ -1,5 +1,5 @@
 import allure
-from playwright.sync_api import expect
+from config import settings
 
 from clients.errors_schema import ValidationErrorSchema, ValidationErrorResponseSchema, InternalErrorResponseSchema
 from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema, FileSchema, \
@@ -10,7 +10,7 @@ from tools.assertions.errors import assert_validation_error, assert_validation_e
 
 @allure.step("Check create file response")
 def assert_create_file_response(request: CreateFileRequestSchema, response: CreateFileResponseSchema):
-    expected_url = f'http://localhost:8000/static/{request.directory}/{request.filename}'
+    expected_url = f"{settings.http_client.client_url}static/{request.directory}/{request.filename}"
 
 
     assert_equal(str(response.file.url), expected_url, 'url')
