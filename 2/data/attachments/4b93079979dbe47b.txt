@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE2VDA4OjI4OjM5LjY0MDIwMyIsInVzZXJfaWQiOiI1OGM4YmU2ZC0xOWYwLTRmY2UtODUzNy02MjU0MDcyOTM1NjAifQ.gBKeUPox70P6iQ1KBBEGi__s-hxy9MwJa15LQSRJhvA' \
+  -H 'content-length: 413' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Author when more north cell truth low.","maxScore":71,"minScore":3,"description":"Tell program personal fund anything remember. Recent break social. Whom meeting state knowledge.\nStart city opportunity. Eat research so yard. Least friend board paper food anyone.","estimatedTime":"7 weeks","previewFileId":"b7614d44-6e21-4c1b-b136-9330f8a80783","createdByUserId":"58c8be6d-19f0-4fce-8537-625407293560"}'

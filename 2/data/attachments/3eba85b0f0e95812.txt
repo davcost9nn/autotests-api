@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE2VDA4OjI4OjM3Ljg4NzAyOSIsInVzZXJfaWQiOiIxMTYyNTllMS1iMzBjLTQ4NjYtYWE4My04MWM0MmFlNmVkYTQifQ.2BfE-gPHbNt2S-vLMFaj8JslqJd51KIAaGMzRuvy_K4' \
+  -H 'content-length: 407' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Past far officer front since.","maxScore":91,"minScore":2,"description":"Blue loss consider anyone thought seat. Support garden girl security woman.\nDo fall finish art. Risk feel still role image available provide. These open their institution issue point.","estimatedTime":"3 weeks","previewFileId":"31fe29b5-77b8-4b38-9c1e-32c98f6f67ae","createdByUserId":"116259e1-b30c-4866-aa83-81c42ae6eda4"}'

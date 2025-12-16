@@ -1,0 +1,19 @@
+INFO     HTTP_CLIENT:event_hook.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hook.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:50 Check create course response
+INFO     BASE_ASSERTIONS:base.py:19 Check that "title" equals to Past far officer front since.
+INFO     BASE_ASSERTIONS:base.py:19 Check that "max_score" equals to 91
+INFO     BASE_ASSERTIONS:base.py:19 Check that "min_score" equals to 2
+INFO     BASE_ASSERTIONS:base.py:19 Check that "description" equals to Blue loss consider anyone thought seat. Support garden girl security woman.
+Do fall finish art. Risk feel still role image available provide. These open their institution issue point.
+INFO     BASE_ASSERTIONS:base.py:19 Check that "estimated_time" equals to 3 weeks
+INFO     BASE_ASSERTIONS:base.py:19 Check that "preview_file_id" equals to 31fe29b5-77b8-4b38-9c1e-32c98f6f67ae
+INFO     BASE_ASSERTIONS:base.py:19 Check that "created_by_user_id" equals to 116259e1-b30c-4866-aa83-81c42ae6eda4
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validating JSON schema

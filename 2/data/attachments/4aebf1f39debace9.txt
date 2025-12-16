@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE2VDA4OjI4OjQwLjI2NjkxNyIsInVzZXJfaWQiOiI4ZDgwMjIwZS1hMjM4LTQyNTEtOTBlZS01NTMwMTI3NDA2NDIifQ.Rmw7l9ZPkkbVwJZEq0dvrAne-MLMBi-IYLVd5NNIp-M' \
+  -H 'content-length: 427' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Quite whether sort effort with author rate.","maxScore":97,"minScore":5,"description":"Argue others international. History attorney research design town would direction.\nControl and help state. Such full baby thought collection. Various economy weight message cut measure ask.","estimatedTime":"1 weeks","previewFileId":"dae70726-d02b-4ffe-9b7f-97eafff4d408","createdByUserId":"8d80220e-a238-4251-90ee-553012740642"}'

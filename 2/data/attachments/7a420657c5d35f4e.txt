@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE2VDA4OjI4OjM5LjA1NzQxMyIsInVzZXJfaWQiOiI0NDE3NGQwNC1lMmQyLTQzYTgtODg2OC05MTYxN2QwNDI3YWMifQ.RAaVwoUtN-ElyE8qAffOu6sCooUoVtcshwyEf9Eg73c' \
+  -H 'content-length: 370' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Same course standard.","maxScore":73,"minScore":21,"description":"Floor TV old fill. Way determine analysis already type. Travel debate market green peace.\nMillion big ask role as. The system painting no full west push.","estimatedTime":"4 weeks","previewFileId":"c23b0ab3-d45b-4be9-9f1e-93b626a44756","createdByUserId":"44174d04-e2d2-43a8-8868-91617d0427ac"}'

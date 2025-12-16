@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/71d1a0d1-4a2f-44d7-82e8-9f06f7a50308' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE2VDA4OjI4OjM2LjM5NzUzOCIsInVzZXJfaWQiOiJjZDcyZjgwMy1jZDc0LTQ2NTctODRmNS0zODU0YmJkMmVkMjMifQ.AOECVJBjhyJ71L0kBLEyEjaQ0kJUhmjJ1VbTEWvERAY' \
+  -H 'content-length: 284' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Let write ten water down.","maxScore":81,"minScore":1,"description":"No sea option value itself list. Research account all administration bag although. Ago outside fact hair.\nScene tonight coach leg argue. Ten discussion about finish executive.","estimatedTime":"10 weeks"}'

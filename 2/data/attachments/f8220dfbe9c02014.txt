@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE2VDA4OjI4OjM4LjQ3MzUxMCIsInVzZXJfaWQiOiI5ZjhkZDFjOC01NTAxLTQyMDctYjNjYi0xMDZkNGU1OWZlMWUifQ.HLaa0R9ttMF3Y1AedKMLx91XaKBIf62cJRPXI_B3zbE' \
+  -H 'content-length: 392' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Food special myself radio.","maxScore":92,"minScore":5,"description":"Democrat image here manager side test. There matter seven event down much store.\nWork purpose whether follow do. Race professor green evidence pressure question for heart.","estimatedTime":"1 weeks","previewFileId":"a51d032f-17fc-4ce7-ba10-4fec8a4535d9","createdByUserId":"9f8dd1c8-5501-4207-b3cb-106d4e59fe1e"}'

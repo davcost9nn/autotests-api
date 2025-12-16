@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE2VDA4OjI4OjM3LjMwMDE0MSIsInVzZXJfaWQiOiI4YWIwNTQwZi0xNmJlLTRkYTQtOTJhZS03NzA3ZDBkYjI2MGEifQ.IT24uXmGU3J7_AzwaKxqaJm2ok3KkMITwLvUJRBFm9k' \
+  -H 'content-length: 384' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Audience of smile sense safe air.","maxScore":54,"minScore":19,"description":"Old list minute buy. Opportunity against moment often somebody.\nScientist actually simply. So box question environmental then. She remain third your offer.","estimatedTime":"3 weeks","previewFileId":"40b82e65-4c76-4e6e-9f19-87e78e46d5d5","createdByUserId":"8ab0540f-16be-4da4-92ae-7707d0db260a"}'

@@ -1,0 +1,21 @@
+INFO     HTTP_CLIENT:event_hook.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hook.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hook.py:28 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hook.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:17 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:19 Check that "title" equals to Stop end ok fight.
+INFO     BASE_ASSERTIONS:base.py:19 Check that "max_score" equals to 55
+INFO     BASE_ASSERTIONS:base.py:19 Check that "min_score" equals to 26
+INFO     BASE_ASSERTIONS:base.py:19 Check that "description" equals to Executive many fall husband technology. Writer recent president.
+Price enough able general. Focus who group happy financial environmental word. Plant all sell edge.
+INFO     BASE_ASSERTIONS:base.py:19 Check that "estimated_time" equals to 1 weeks
+INFO     BASE_ASSERTIONS:base.py:19 Check that "course_id" equals to 59b6d698-dcad-4148-a13e-a2539920b6a0
+INFO     BASE_ASSERTIONS:base.py:19 Check that "order_index" equals to 100
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validating JSON schema

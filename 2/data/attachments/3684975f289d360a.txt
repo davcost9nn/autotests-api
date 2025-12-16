@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/ae26ed49-7663-4c97-8b6c-039c274a8a2c' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE2VDA4OjI4OjM5LjA1NzQxMyIsInVzZXJfaWQiOiI0NDE3NGQwNC1lMmQyLTQzYTgtODg2OC05MTYxN2QwNDI3YWMifQ.RAaVwoUtN-ElyE8qAffOu6sCooUoVtcshwyEf9Eg73c' \
+  -H 'content-length: 321' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Visit public owner away age cover society.","maxScore":94,"minScore":27,"orderIndex":73,"description":"Tough technology deep early police reduce reach western. Toward never data often. Expect write factor ball theory suffer.\nMay itself both any. School when wife theory catch value.","estimatedTime":"1 weeks"}'

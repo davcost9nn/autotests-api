@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE2VDA4OjI4OjM2LjM5NzUzOCIsInVzZXJfaWQiOiJjZDcyZjgwMy1jZDc0LTQ2NTctODRmNS0zODU0YmJkMmVkMjMifQ.AOECVJBjhyJ71L0kBLEyEjaQ0kJUhmjJ1VbTEWvERAY' \
+  -H 'content-length: 386' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Site democratic strong between.","maxScore":99,"minScore":14,"description":"Until history yeah quality series able Mr. Into either cause hot participant detail research.\nNone system threat candidate. Left fish real become he war south.","estimatedTime":"7 weeks","previewFileId":"d10aacc4-fd3a-4543-86ab-a0ad266c7143","createdByUserId":"cd72f803-cd74-4657-84f5-3854bbd2ed23"}'
