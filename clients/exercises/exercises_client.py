@@ -21,7 +21,7 @@ class ExercisesClient(APIClient):
 
     @allure.step("Create exercise")
     def create_exercise_api(self, request: CreateExerciseRequestSchema) -> Response:
-        # Преобразование только здесь
+
         request_data = request.model_dump(by_alias=True)
         return self.post(APIRoutes.EXERCISES, json=request_data)
 
@@ -43,7 +43,7 @@ class ExercisesClient(APIClient):
         return GetExercisesResponseSchema.model_validate_json(response.text)
 
     def create_exercise(self, request: CreateExerciseRequestSchema) -> CreateExerciseResponseSchema:
-        # Передаем модель как есть
+
         response = self.create_exercise_api(request)
         return CreateExerciseResponseSchema.model_validate_json(response.text)
 
